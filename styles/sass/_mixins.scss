@@ -1,0 +1,6 @@
+@mixin font($size) {
+    font-size: $size * 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    color: $primary;
+    }

@@ -1,0 +1,15 @@
+// COLOURS
+$secondary: #2c2c2c;
+$background: #000;
+$primary: white;
+
+
+body {
+    @include font(16);   
+    background-color: $background; 
+}
+
+h1 {
+    @include font(40);
+    text-align: center;
+}

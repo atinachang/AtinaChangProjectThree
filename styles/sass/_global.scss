@@ -1,0 +1,19 @@
+.wrapper {
+    max-width: 1140px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    height: 80vh;
+    
+}
+
+.producers {
+    border: 2px solid red;
+    // grid-template-columns: calc(100% / 4);
+}
