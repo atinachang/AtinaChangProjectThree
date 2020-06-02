@@ -283,7 +283,7 @@ h1 {
   height: 80vh;
 }
 
-.producers {
+.gridItem {
   border: 2px solid red;
   margin: 20px;
   display: -webkit-box;
@@ -297,10 +297,54 @@ h1 {
           justify-content: center;
 }
 
+.gridItem {
+  background-size: contain;
+}
+
 .producers1 {
-  background-image: url();
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 200px;
-  width: 200px;
+  background-image: url("../images/southSide.jpeg");
+}
+
+.producers2 {
+  background-image: url("../images/bangladesh.jpeg");
+}
+
+.producers3 {
+  background-image: url("../images/charlieHeat.jpeg");
+}
+
+.producers4 {
+  background-image: url("../images/davidBanner.png");
+}
+
+.producers5 {
+  background-image: url("../images/daytrip.jpeg");
+}
+
+.producers6 {
+  background-image: url("../images/djMustard.png");
+}
+
+.producers7 {
+  background-image: url("../images/donCannon.jpeg");
+}
+
+.producers8 {
+  background-image: url("../images/drummaBoy.jpeg");
+}
+
+.producers9 {
+  background-image: url("../images/justBlaze.jpeg");
+}
+
+.producers10 {
+  background-image: url("../images/metroBoomin.jpeg");
+}
+
+.producers11 {
+  background-image: url("../images/mikeWillMadeIt.jpeg");
+}
+
+.producers12 {
+  background-image: url("../images/murdaBeatz.jpeg");
 }
