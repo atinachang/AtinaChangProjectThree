@@ -246,7 +246,7 @@ img {
 }
 
 body {
-  font-size: 16px;
+  font-size: 24px;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   color: white;
@@ -263,21 +263,44 @@ h1 {
 
 .wrapper {
   max-width: 1140px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
+  -ms-grid-columns: (200px)[4];
+      grid-template-columns: repeat(4, 200px);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
   height: 80vh;
 }
 
 .producers {
   border: 2px solid red;
-  margin: 10px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.producers1 {
+  background-image: url();
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 200px;
 }

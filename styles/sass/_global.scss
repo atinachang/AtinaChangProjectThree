@@ -1,19 +1,23 @@
 .wrapper {
     max-width: 1140px;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
     height: 80vh;
-    
 }
 
 .producers {
     border: 2px solid red;
-    margin: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
