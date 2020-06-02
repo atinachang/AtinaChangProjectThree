@@ -1,15 +1,17 @@
 // COLOURS
-$secondary: #2c2c2c;
-$background: #000;
-$primary: white;
+$accent: #2c2c2c;
+$secondary: white;
+$primary: #000;
 
 
 body {
     @include font(24);   
-    background-color: $background; 
+    background-color: $secondary; 
+    color: $secondary;
 }
 
 h1 {
     @include font(40);
     text-align: center;
+    color: $primary;
 }

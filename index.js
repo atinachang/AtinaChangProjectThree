@@ -1,16 +1,24 @@
-// function PlaySound(fileName) {
-//     var path = "./" + fileName + ".mp3"
-//     var sound = new Audio(path);
-//     sound.play();
-// }
+
 $(function() {
-	var audTag = document.getElementsByTagName('audio');
-    console.log(audTag);
+    var audTag = document.getElementsByTagName('audio');
+    // console.log(audTag);
     
+    // $(".southside").on("click", "keydown", function() {
+    //     if (keyCode===87) 
+    //     var audio = $(".p1")[0];
+    //     audio.play();
+    // });
+    
+    // document.addEventListener('keydown', function(e) {
+    //     if (e.keyCode == 87) {
+    //     document.getElementsByTagName('.p1').play(audio);
+    //     }
+    // });
     $(".southside").on("click", function() {
         var audio = $(".p1")[0];
         audio.play();
     });
+
     $(".bangladesh").on("click", function() {
         var audio = $(".p2")[0];
         audio.play();
