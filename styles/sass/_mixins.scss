@@ -13,4 +13,9 @@
 
 @mixin bg($url) {
     background-image: url($url);
+    // opacity: 0.7;
+
+    // &:hover {
+    //     opacity: 1;
+    // }
 }

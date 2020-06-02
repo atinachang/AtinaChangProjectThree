@@ -284,8 +284,10 @@ h1 {
 }
 
 .gridItem {
-  border: 2px solid red;
+  border: 2px solid white;
   margin: 20px;
+  border-radius: 50%;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,56 +297,75 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.gridItem {
   background-size: contain;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
-.producers1 {
+.gridItem:hover {
+  -webkit-filter: grayscale(0) contrast(125%);
+          filter: grayscale(0) contrast(125%);
+  -webkit-box-shadow: 0px 0px 50px 25px #2c2c2c;
+          box-shadow: 0px 0px 50px 25px #2c2c2c;
+  cursor: pointer;
+}
+
+.gridItem:active {
+  margin: 25px;
+}
+
+.gridItem p {
+  text-shadow: 5px 5px 5px #000;
+}
+
+.hide {
+  display: none;
+}
+
+.southside {
   background-image: url("../images/southSide.jpeg");
 }
 
-.producers2 {
+.bangladesh {
   background-image: url("../images/bangladesh.jpeg");
 }
 
-.producers3 {
+.charlieHeat {
   background-image: url("../images/charlieHeat.jpeg");
 }
 
-.producers4 {
+.banner {
   background-image: url("../images/davidBanner.png");
 }
 
-.producers5 {
+.daytrip {
   background-image: url("../images/daytrip.jpeg");
 }
 
-.producers6 {
+.djMustard {
   background-image: url("../images/djMustard.png");
 }
 
-.producers7 {
+.cannon {
   background-image: url("../images/donCannon.jpeg");
 }
 
-.producers8 {
+.drummaBoy {
   background-image: url("../images/drummaBoy.jpeg");
 }
 
-.producers9 {
+.blaze {
   background-image: url("../images/justBlaze.jpeg");
 }
 
-.producers10 {
+.metroBoomin {
   background-image: url("../images/metroBoomin.jpeg");
 }
 
-.producers11 {
+.mikeWill {
   background-image: url("../images/mikeWillMadeIt.jpeg");
 }
 
-.producers12 {
+.murdaBeatz {
   background-image: url("../images/murdaBeatz.jpeg");
 }
