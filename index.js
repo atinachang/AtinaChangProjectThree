@@ -1,20 +1,22 @@
-
-
 $(function() {
+    var parent = $(".container");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+
     var audTag = document.getElementsByTagName('audio');
         // console.log(audTag);
-
-
     $(".southside").on("click", function() {
         const audio = $(".p1")[0];
         audio.play();
     });
-    $(document).keydown(function(e){
-        if (e.keyCode === 87) {
-            document.getElementsByClassName('p1')[0].play();
-            return false
-        }
-    })
+    // $(document).keydown(function(e){
+    //     if (e.keyCode === 87) {
+    //         document.getElementsByClassName('p1')[0].play();
+    //         return false
+    //     }
+    // })
     
 
 
