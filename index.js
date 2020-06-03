@@ -1,23 +1,30 @@
 $(function() {
+
+    //randomize divs on page load
     var parent = $(".container");
     var divs = parent.children();
-    while (divs.length) {
-        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-    }
 
+    //loop will run as long as the divs run for the length of the number of divs
+    while (divs.length) {
+        console.log(divs.length)
+        //append items on the container that are removed and readded in a randomized order
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    };
+
+    //play sound assigned to div
     var audTag = document.getElementsByTagName('audio');
         // console.log(audTag);
     $(".southside").on("click", function() {
         const audio = $(".p1")[0];
         audio.play();
     });
-    // $(document).keydown(function(e){
+
+    //   $(document).keydown(function(e){
     //     if (e.keyCode === 87) {
     //         document.getElementsByClassName('p1')[0].play();
     //         return false
     //     }
-    // })
-    
+    // })  
 
 
     $(".bangladesh").on("click", function() {

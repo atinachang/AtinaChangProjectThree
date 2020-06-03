@@ -246,11 +246,7 @@ img {
 }
 
 body {
-  font-size: 24px;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
   background-color: whitesmoke;
-  color: #000;
   text-align: center;
 }
 
@@ -260,6 +256,20 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: #000;
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -299,8 +309,8 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   background-size: contain;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
 .gridItem:hover, .gridItem:focus-within {
@@ -316,7 +326,7 @@ h1 {
   margin: 25px;
 }
 
-.gridItem p {
+.gridItem h2 {
   color: white;
   text-shadow: 5px 5px 5px #2c2c2c;
 }
@@ -372,3 +382,7 @@ h1 {
 .murdaBeatz {
   background-image: url("../images/murdaBeatz.jpeg");
 }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

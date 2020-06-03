@@ -5,9 +5,7 @@ $primary: #000;
 
 
 body {
-    @include font(24);   
     background-color: whitesmoke; 
-    color: $primary;
     text-align: center;
 }
 
@@ -15,4 +13,15 @@ h1 {
     @include font(40);
     text-align: center;
     color: $primary;
+}
+
+h2 {
+    @include font(24);
+}
+
+p {
+    color: $primary;
+    @include font(14);   
+    text-transform: uppercase;
+
 }
