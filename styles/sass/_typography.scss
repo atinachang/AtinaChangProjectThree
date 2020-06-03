@@ -6,8 +6,9 @@ $primary: #000;
 
 body {
     @include font(24);   
-    background-color: $secondary; 
-    color: $secondary;
+    background-color: whitesmoke; 
+    color: $primary;
+    text-align: center;
 }
 
 h1 {
