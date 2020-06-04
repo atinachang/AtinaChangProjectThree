@@ -256,6 +256,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #000;
+  margin: 0;
 }
 
 h2 {
@@ -270,6 +271,10 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+section {
+  height: 86vh;
 }
 
 .wrapper {
@@ -287,16 +292,15 @@ p {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (200px)[4];
-      grid-template-columns: repeat(4, 200px);
-  -ms-grid-rows: (200px)[3];
-      grid-template-rows: repeat(3, 200px);
-  height: 80vh;
+  -ms-grid-columns: (175px)[4];
+      grid-template-columns: repeat(4, 175px);
+  -ms-grid-rows: (175px)[4];
+      grid-template-rows: repeat(4, 175px);
 }
 
 .gridItem {
   border: 2px solid #000;
-  margin: 20px;
+  margin: 10px;
   border-radius: 50%;
   text-align: center;
   display: -webkit-box;
@@ -319,11 +323,15 @@ p {
   -webkit-box-shadow: 0px 0px 50px 25px #2c2c2c;
           box-shadow: 0px 0px 50px 25px #2c2c2c;
   cursor: pointer;
-  margin: 15px;
+  margin: 5px;
+}
+
+.gridItem:hover h2, .gridItem:focus-within h2 {
+  display: none;
 }
 
 .gridItem:active {
-  margin: 25px;
+  margin: 15px;
 }
 
 .gridItem h2 {
@@ -381,6 +389,22 @@ p {
 
 .murdaBeatz {
   background-image: url("../images/murdaBeatz.jpeg");
+}
+
+.sonnyDigital {
+  background-image: url("../images/sonnyDigital.jpeg");
+}
+
+.tayKeith {
+  background-image: url("../images/tayKeith.jpeg");
+}
+
+.youngChop {
+  background-image: url("../images/youngChop.jpeg");
+}
+
+.harryFraud {
+  background-image: url("../images/harryFraud.jpeg");
 }
 
 /* Portrait tablet and small desktops */

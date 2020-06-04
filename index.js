@@ -1,15 +1,29 @@
 $(function() {
 
-    //randomize divs on page load
+    // //randomize divs on page load
     var parent = $(".container");
     var divs = parent.children();
-
     //loop will run as long as the divs run for the length of the number of divs
     while (divs.length) {
         console.log(divs.length)
         //append items on the container that are removed and readded in a randomized order
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     };
+    // //credit: https://jsfiddle.net/C6LPY/2/
+
+
+    // //select divs on page load and hide the rest
+    // const elems = $(".gridItem");
+    //     if (elems.length) {
+    //     var keep = Math.floor(Math.random() * elems.length);
+    //     for (var i = 6; i < elems.length; ++i) {
+    //         if (i !== keep) {
+    //         $(elems[i]).hide();
+    //         }
+    //     }
+    //     }
+    //credit: https://stackoverflow.com/questions/28412995/javascript-random-div-on-page-load
+
 
     //play sound assigned to div
     var audTag = document.getElementsByTagName('audio');
@@ -69,6 +83,22 @@ $(function() {
     });
     $(".banner").on("click", function() {
         const audio = $(".p12")[0];
+        audio.play();
+    });
+    $(".tayKeith").on("click", function() {
+        const audio = $(".p13")[0];
+        audio.play();
+    });
+    $(".sonnyDigital").on("click", function() {
+        const audio = $(".p14")[0];
+        audio.play();
+    });
+    $(".youngChop").on("click", function() {
+        const audio = $(".p15")[0];
+        audio.play();
+    });
+    $(".harryFraud").on("click", function() {
+        const audio = $(".p16")[0];
         audio.play();
     });
 });

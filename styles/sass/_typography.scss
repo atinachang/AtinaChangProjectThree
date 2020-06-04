@@ -13,6 +13,7 @@ h1 {
     @include font(40);
     text-align: center;
     color: $primary;
+    margin: 0;
 }
 
 h2 {
