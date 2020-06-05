@@ -292,10 +292,10 @@ section {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (175px)[4];
-      grid-template-columns: repeat(4, 175px);
-  -ms-grid-rows: (175px)[4];
-      grid-template-rows: repeat(4, 175px);
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
 }
 
 .gridItem {
@@ -355,7 +355,7 @@ section {
   background-image: url("../images/charlieHeat.jpeg");
 }
 
-.banner {
+.davidBanner {
   background-image: url("../images/davidBanner.png");
 }
 
@@ -367,7 +367,7 @@ section {
   background-image: url("../images/djMustard.png");
 }
 
-.cannon {
+.donCannon {
   background-image: url("../images/donCannon.jpeg");
 }
 
@@ -375,7 +375,7 @@ section {
   background-image: url("../images/drummaBoy.jpeg");
 }
 
-.blaze {
+.justBlaze {
   background-image: url("../images/justBlaze.jpeg");
 }
 
