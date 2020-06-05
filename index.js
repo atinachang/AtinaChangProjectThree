@@ -33,7 +33,7 @@ $(function() {
         {
             name: "murdaBeatz",
 			producer: `Murda Beatz`,
-			audio: './audio/murdaBeatz.mp3',
+			audio: './audio/murda.mp3',
 			image: './images/murdaBeatz.jpeg',
 			audioClass: 'p4',
         },
@@ -114,8 +114,6 @@ $(function() {
 			image: './images/harryFraud.jpeg',
 			audioClass: 'p16',
         },
-
-
 	];
 
 
@@ -135,7 +133,7 @@ $(function() {
     });
 
     //the number of blocks(divs) to show on the page
-    content.length = 6;
+    content.length = 9;
 
     //for each item in the array after adjusting for length, append new li with content from our 'content' array
     content.forEach(block => {
