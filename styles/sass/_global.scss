@@ -1,16 +1,17 @@
 .wrapper {
     max-width: 1140px;
     width: 90%;
-    margin: 0 auto;
+    margin: 100px auto;
     display: flex;
     justify-content: center;
 }
 
 
 .container {
+    // padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
 }
 
 .gridItem {

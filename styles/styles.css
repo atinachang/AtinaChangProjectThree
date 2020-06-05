@@ -256,7 +256,6 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #000;
-  margin: 0;
 }
 
 h2 {
@@ -276,7 +275,7 @@ p {
 .wrapper {
   max-width: 1140px;
   width: 90%;
-  margin: 0 auto;
+  margin: 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,8 +289,8 @@ p {
   display: grid;
   -ms-grid-columns: (200px)[3];
       grid-template-columns: repeat(3, 200px);
-  -ms-grid-rows: (200px)[3];
-      grid-template-rows: repeat(3, 200px);
+  -ms-grid-rows: (200px)[2];
+      grid-template-rows: repeat(2, 200px);
 }
 
 .gridItem {
@@ -424,6 +423,7 @@ p {
   }
   .wrapper {
     width: 80%;
+    margin: 0 auto;
   }
   .container {
     -ms-grid-columns: (200px)[2];
