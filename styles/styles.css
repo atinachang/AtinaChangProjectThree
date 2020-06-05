@@ -275,7 +275,7 @@ p {
 .wrapper {
   max-width: 1140px;
   width: 90%;
-  margin: 100px auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,8 +289,8 @@ p {
   display: grid;
   -ms-grid-columns: (200px)[3];
       grid-template-columns: repeat(3, 200px);
-  -ms-grid-rows: (200px)[2];
-      grid-template-rows: repeat(2, 200px);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
 }
 
 .gridItem {
@@ -332,10 +332,6 @@ p {
 .gridItem h2 {
   color: white;
   text-shadow: 5px 5px 5px #2c2c2c;
-}
-
-.hide {
-  display: none;
 }
 
 .southside {
@@ -430,5 +426,11 @@ p {
         grid-template-columns: repeat(2, 200px);
     -ms-grid-rows: (200px)[3];
         grid-template-rows: repeat(3, 200px);
+  }
+  .gridItem {
+    display: none;
+  }
+  .gridItem:nth-child(-n+9) {
+    display: block;
   }
 }

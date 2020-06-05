@@ -123,7 +123,7 @@ const content = [
 // }
 
 // the number of blocks(divs) to show on the page
-content.length = 6;
+content.length = 9;
 
 
 

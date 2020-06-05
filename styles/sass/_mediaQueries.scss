@@ -28,4 +28,12 @@
 		grid-template-columns: repeat(2, 200px);
 		grid-template-rows: repeat(3, 200px);
 	}
+
+	.gridItem {
+		display: none;
+	}
+
+	.gridItem:nth-child(-n+9) {
+		display: block;
+	}
 }
