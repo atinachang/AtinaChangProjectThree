@@ -430,7 +430,23 @@ p {
   .gridItem {
     display: none;
   }
-  .gridItem:nth-child(-n+6) {
-    display: block;
+  .gridItem:nth-child(-n+12) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+    -ms-grid-rows: (200px)[2];
+        grid-template-rows: repeat(2, 200px);
+  }
+  li:nth-child(-n+4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }

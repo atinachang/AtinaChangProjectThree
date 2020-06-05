@@ -33,7 +33,19 @@
 		display: none;
 	}
 
-	.gridItem:nth-child(-n+6) {
-		display: block;
+	.gridItem:nth-child(-n+12) {
+		display: flex;
+	}
+}
+
+//iPhone 6/7
+@media  (max-width: 375px) {
+
+	.container {
+		grid-template-columns: repeat(2, 200px);
+		grid-template-rows: repeat(2, 200px);
+	}
+	li:nth-child(-n+4) {
+		display: flex;
 	}
 }
