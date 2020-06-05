@@ -273,10 +273,6 @@ p {
   text-transform: uppercase;
 }
 
-section {
-  height: 86vh;
-}
-
 .wrapper {
   max-width: 1140px;
   width: 90%;
@@ -300,7 +296,7 @@ section {
 
 .gridItem {
   border: 2px solid #000;
-  margin: 10px;
+  margin: 20px;
   border-radius: 50%;
   text-align: center;
   display: -webkit-box;
@@ -323,7 +319,7 @@ section {
   -webkit-box-shadow: 0px 0px 50px 25px #2c2c2c;
           box-shadow: 0px 0px 50px 25px #2c2c2c;
   cursor: pointer;
-  margin: 5px;
+  margin: 10px;
 }
 
 .gridItem:hover h2, .gridItem:focus-within h2 {
@@ -331,7 +327,7 @@ section {
 }
 
 .gridItem:active {
-  margin: 15px;
+  margin: 25px;
 }
 
 .gridItem h2 {
@@ -425,5 +421,14 @@ section {
 @media (max-width: 480px) {
   body {
     background: goldenrod;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .container {
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+    -ms-grid-rows: (200px)[5];
+        grid-template-rows: repeat(5, 200px);
   }
 }

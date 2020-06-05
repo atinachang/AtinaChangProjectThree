@@ -18,4 +18,13 @@
 	body {
 		background: goldenrod;
 	}
+
+	.wrapper {
+		width: 80%;
+	}
+
+	.container {
+		grid-template-columns: repeat(2, 200px);
+		grid-template-rows: repeat(5, 200px);
+	}
 }
