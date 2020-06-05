@@ -115,6 +115,18 @@ const content = [
 ];
 
 
+
+// const widthChange = document.querySelector('.gridItem');
+
+// function windowSize() {
+
+// }
+
+// the number of blocks(divs) to show on the page
+content.length = 6;
+
+
+
 content.init = () => {
     
     //function that gives random integer
@@ -131,16 +143,33 @@ content.init = () => {
         return a.position - b.position
     });
 
-    //the number of blocks(divs) to show on the page
-    // content.length = 9;
+
+
+    // if (matchMedia){    
+    //     const mq =  window.matchMedia("(min-width: 480px)");
+    //     mq.addListener(WidthChange);
+    //     WidthChange(mq);
+    //     console.log(mq)
+    //     }
+        
+    //     function WidthChange(mq) {
+    //         console.log(WidthChange);
+    //         if (mq.matches) {
+    //             content.length = 6;
+    //         } else {
+    //             content.length = 9;
+    //         }
+    //     }
 
     // function mediaQ() {
     //     const x = document.getElementByClass(".container");
-        if (window.matchMedia("max-width: 480px").matches) {
-            content.length = 6;
-        } else {
-            content.length = 9;
-        }
+
+    
+
+        //     content.length = 6;
+        // } else {
+        //     content.length = 9;
+        // }
     //   }
 
     //for each item in the array after adjusting for length, append new li with content from our 'content' array
@@ -154,7 +183,6 @@ content.init = () => {
     });
 
     $('li').on('click', function() {
-        // const clickedBlock = $(this).attr("id");
         const audio =  $(this).next()[0];
         audio.play();
         
