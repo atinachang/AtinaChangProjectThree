@@ -430,7 +430,7 @@ p {
   .gridItem {
     display: none;
   }
-  .gridItem:nth-child(-n+9) {
+  .gridItem:nth-child(-n+6) {
     display: block;
   }
 }
