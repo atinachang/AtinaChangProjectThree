@@ -1,11 +1,21 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+	body {
+	background: green;
+	}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+	body {
+		background: blueviolet;
+	}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+	body {
+		background: goldenrod;
+	}
 }
