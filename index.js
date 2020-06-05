@@ -132,102 +132,118 @@ content.init = () => {
     });
 
     //the number of blocks(divs) to show on the page
-    content.length = 9;
+    // content.length = 9;
+
+    // function mediaQ() {
+    //     const x = document.getElementByClass(".container");
+        if (window.matchMedia("max-width: 480px").matches) {
+            content.length = 6;
+        } else {
+            content.length = 9;
+        }
+    //   }
 
     //for each item in the array after adjusting for length, append new li with content from our 'content' array
     content.forEach(block => {
         $('.container').append(`
-        <li class="gridItem ${block.name}">
+        <li class="gridItem ${block.name}" id="${block.name}">
         <h2>${block.producer}</h2>  
         </li>
         <audio src="${block.audio}" class="${block.audioClass}" preload="auto" type="audio/mpeg"></audio>
         `);
     });
+
+    $('li').on('click', function() {
+        // const clickedBlock = $(this).attr("id");
+        const audio =  $(this).next()[0];
+        audio.play();
+        
+    })
 }
 
 $(function() {
-	content.init();
+    content.init();
+    
+    //     //play sound assigned to div - KEEP THIS
+    // $(".southside").on("click", function() {
+    //     const audio = $(".p1")[0];
+    //     audio.play();
+    // });
 
-        //play sound assigned to div - KEEP THIS
-    $(".southside").on("click", function() {
-        const audio = $(".p1")[0];
-        audio.play();
-    });
+    // $(".bangladesh").on("click", function() {
+    //     const audio = $(".p2")[0];
+    //     audio.play();
+    // });
 
-    $(".bangladesh").on("click", function() {
-        const audio = $(".p2")[0];
-        audio.play();
-    });
+    // $(".charlieHeat").on("click", function() {
+    //     const audio = $(".p3")[0];
+    //     audio.play();
+    // });
 
-    $(".charlieHeat").on("click", function() {
-        const audio = $(".p3")[0];
-        audio.play();
-    });
+    // $(".murdaBeatz").on("click", function() {
+    //     const audio = $(".p4")[0];
+    //     audio.play();
+    // });
 
-    $(".murdaBeatz").on("click", function() {
-        const audio = $(".p4")[0];
-        audio.play();
-    });
+    // $(".daytrip").on("click", function() {
+    //     const audio = $(".p5")[0];
+    //     audio.play();
+    // });
 
-    $(".daytrip").on("click", function() {
-        const audio = $(".p5")[0];
-        audio.play();
-    });
+    // $(".drummaBoy").on("click", function() {
+    //     const audio = $(".p6")[0];
+    //     audio.play();
+    // });
 
-    $(".drummaBoy").on("click", function() {
-        const audio = $(".p6")[0];
-        audio.play();
-    });
+    // $(".mikeWill").on("click", function() {
+    //     const audio = $(".p7")[0];
+    //     audio.play();
+    // });
 
-    $(".mikeWill").on("click", function() {
-        const audio = $(".p7")[0];
-        audio.play();
-    });
+    // $(".djMustard").on("click", function() {
+    //     const audio = $(".p8")[0];
+    //     audio.play();
+    // });
 
-    $(".djMustard").on("click", function() {
-        const audio = $(".p8")[0];
-        audio.play();
-    });
+    // $(".metroBoomin").on("click", function() {
+    //     const audio = $(".p9")[0];
+    //     audio.play();
+    // });
 
-    $(".metroBoomin").on("click", function() {
-        const audio = $(".p9")[0];
-        audio.play();
-    });
+    // $(".donCannon").on("click", function() {
+    //     const audio = $(".p10")[0];
+    //     audio.play();
+    // });
 
-    $(".donCannon").on("click", function() {
-        const audio = $(".p10")[0];
-        audio.play();
-    });
+    // $(".justBlaze").on("click", function() {
+    //     const audio = $(".p11")[0];
+    //     audio.play();
+    // });
 
-    $(".justBlaze").on("click", function() {
-        const audio = $(".p11")[0];
-        audio.play();
-    });
+    // $(".davidBanner").on("click", function() {
+    //     const audio = $(".p12")[0];
+    //     audio.play();
+    // });
 
-    $(".davidBanner").on("click", function() {
-        const audio = $(".p12")[0];
-        audio.play();
-    });
+    // $(".tayKeith").on("click", function() {
+    //     const audio = $(".p13")[0];
+    //     audio.play();
+    // });
 
-    $(".tayKeith").on("click", function() {
-        const audio = $(".p13")[0];
-        audio.play();
-    });
+    // $(".sonnyDigital").on("click", function() {
+    //     const audio = $(".p14")[0];
+    //     audio.play();
+    // });
 
-    $(".sonnyDigital").on("click", function() {
-        const audio = $(".p14")[0];
-        audio.play();
-    });
+    // $(".youngChop").on("click", function() {
+    //     const audio = $(".p15")[0];
+    //     audio.play();
+    // });
 
-    $(".youngChop").on("click", function() {
-        const audio = $(".p15")[0];
-        audio.play();
-    });
-
-    $(".harryFraud").on("click", function() {
-        const audio = $(".p16")[0];
-        audio.play();
-    });
+    // $(".harryFraud").on("click", function() {
+    //     const audio = $(".p16")[0];
+    //     audio.play();
+    // });
 });
 
 
