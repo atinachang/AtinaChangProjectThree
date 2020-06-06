@@ -398,6 +398,38 @@ p {
   background-image: url("../images/harryFraud.jpeg");
 }
 
+.bobbyJohnson {
+  background-image: url("../images/bobbyJohnson.jpeg");
+}
+
+.darkChild {
+  background-image: url("../images/darkChild.jpeg");
+}
+
+.jahlilBeats {
+  background-image: url("../images/jahlilBeats.jpg");
+}
+
+.londonOnDaTrack {
+  background-image: url("../images/londonOnDaTrack.jpeg");
+}
+
+.maalyRaw {
+  background-image: url("../images/maalyRaw.jpeg");
+}
+
+.nitti {
+  background-image: url("../images/nitti.jpeg");
+}
+
+.pierreBourne {
+  background-image: url("../images/pierreBourne.jpeg");
+}
+
+.quay {
+  background-image: url("../images/quay.jpeg");
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   body {
@@ -444,7 +476,10 @@ p {
     -ms-grid-rows: (200px)[2];
         grid-template-rows: repeat(2, 200px);
   }
-  li:nth-child(-n+4) {
+  .gridItem {
+    display: none;
+  }
+  .gridItem:nth-child(-n+8) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

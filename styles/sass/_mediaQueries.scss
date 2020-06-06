@@ -45,7 +45,12 @@
 		grid-template-columns: repeat(2, 200px);
 		grid-template-rows: repeat(2, 200px);
 	}
-	li:nth-child(-n+4) {
+
+	.gridItem {
+		display: none;
+	}
+
+	.gridItem:nth-child(-n+8) {
 		display: flex;
 	}
 }
