@@ -172,16 +172,6 @@ const content = [
 
 
 
-// const widthChange = document.querySelector('.gridItem');
-
-// function windowSize() {
-
-// }
-
-// the number of blocks(divs) to show on the page
-content.length = 9;
-
-
 
 content.init = () => {
     
@@ -199,34 +189,8 @@ content.init = () => {
         return a.position - b.position
     });
 
-
-
-    // if (matchMedia){    
-    //     const mq =  window.matchMedia("(min-width: 480px)");
-    //     mq.addListener(WidthChange);
-    //     WidthChange(mq);
-    //     console.log(mq)
-    //     }
-        
-    //     function WidthChange(mq) {
-    //         console.log(WidthChange);
-    //         if (mq.matches) {
-    //             content.length = 6;
-    //         } else {
-    //             content.length = 9;
-    //         }
-    //     }
-
-    // function mediaQ() {
-    //     const x = document.getElementByClass(".container");
-
-    
-
-        //     content.length = 6;
-        // } else {
-        //     content.length = 9;
-        // }
-    //   }
+    // the number of blocks(divs) to show on the page
+    content.length = 9;
 
     //for each item in the array after adjusting for length, append new li with content from our 'content' array
     content.forEach(block => {
@@ -248,86 +212,6 @@ content.init = () => {
 $(function() {
     content.init();
     
-    //     //play sound assigned to div - KEEP THIS
-    // $(".southside").on("click", function() {
-    //     const audio = $(".p1")[0];
-    //     audio.play();
-    // });
-
-    // $(".bangladesh").on("click", function() {
-    //     const audio = $(".p2")[0];
-    //     audio.play();
-    // });
-
-    // $(".charlieHeat").on("click", function() {
-    //     const audio = $(".p3")[0];
-    //     audio.play();
-    // });
-
-    // $(".murdaBeatz").on("click", function() {
-    //     const audio = $(".p4")[0];
-    //     audio.play();
-    // });
-
-    // $(".daytrip").on("click", function() {
-    //     const audio = $(".p5")[0];
-    //     audio.play();
-    // });
-
-    // $(".drummaBoy").on("click", function() {
-    //     const audio = $(".p6")[0];
-    //     audio.play();
-    // });
-
-    // $(".mikeWill").on("click", function() {
-    //     const audio = $(".p7")[0];
-    //     audio.play();
-    // });
-
-    // $(".djMustard").on("click", function() {
-    //     const audio = $(".p8")[0];
-    //     audio.play();
-    // });
-
-    // $(".metroBoomin").on("click", function() {
-    //     const audio = $(".p9")[0];
-    //     audio.play();
-    // });
-
-    // $(".donCannon").on("click", function() {
-    //     const audio = $(".p10")[0];
-    //     audio.play();
-    // });
-
-    // $(".justBlaze").on("click", function() {
-    //     const audio = $(".p11")[0];
-    //     audio.play();
-    // });
-
-    // $(".davidBanner").on("click", function() {
-    //     const audio = $(".p12")[0];
-    //     audio.play();
-    // });
-
-    // $(".tayKeith").on("click", function() {
-    //     const audio = $(".p13")[0];
-    //     audio.play();
-    // });
-
-    // $(".sonnyDigital").on("click", function() {
-    //     const audio = $(".p14")[0];
-    //     audio.play();
-    // });
-
-    // $(".youngChop").on("click", function() {
-    //     const audio = $(".p15")[0];
-    //     audio.play();
-    // });
-
-    // $(".harryFraud").on("click", function() {
-    //     const audio = $(".p16")[0];
-    //     audio.play();
-    // });
 });
 
 
