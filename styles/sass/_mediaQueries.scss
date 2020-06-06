@@ -1,24 +1,4 @@
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-	body {
-	background: green;
-	}
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-	body {
-		background: blueviolet;
-	}
-}
-
-/* Landscape phones and down */
 @media (max-width: 600px) {
-
-	body {
-		background: goldenrod;
-	}
-
 	.wrapper {
 		width: 80%;
 		margin: 0 auto;
@@ -38,19 +18,19 @@
 	}
 }
 
-//iPhone 6/7
-@media  (max-width: 375px) {
+/* Landscape phones and down */
+@media  (max-width: 480px) {
 
-	.container {
-		grid-template-columns: repeat(2, 200px);
-		grid-template-rows: repeat(2, 200px);
-	}
+	// .container {
+	// 	grid-template-columns: repeat(2, 200px);
+	// 	grid-template-rows: repeat(2, 200px);
+	// }
 
-	.gridItem {
-		display: none;
-	}
+	// .gridItem {
+	// 	display: none;
+	// }
 
-	.gridItem:nth-child(-n+8) {
-		display: flex;
-	}
+	// .gridItem:nth-child(-n+8) {
+	// 	display: flex;
+	// }
 }

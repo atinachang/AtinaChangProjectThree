@@ -170,9 +170,6 @@ const content = [
     },
 ];
 
-
-
-
 content.init = () => {
     
     //function that gives random integer

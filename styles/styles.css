@@ -430,25 +430,7 @@ p {
   background-image: url("../images/quay.jpeg");
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  body {
-    background: green;
-  }
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  body {
-    background: blueviolet;
-  }
-}
-
-/* Landscape phones and down */
 @media (max-width: 600px) {
-  body {
-    background: goldenrod;
-  }
   .wrapper {
     width: 80%;
     margin: 0 auto;
@@ -469,19 +451,4 @@ p {
   }
 }
 
-@media (max-width: 375px) {
-  .container {
-    -ms-grid-columns: (200px)[2];
-        grid-template-columns: repeat(2, 200px);
-    -ms-grid-rows: (200px)[2];
-        grid-template-rows: repeat(2, 200px);
-  }
-  .gridItem {
-    display: none;
-  }
-  .gridItem:nth-child(-n+8) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
+/* Landscape phones and down */
