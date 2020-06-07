@@ -271,7 +271,6 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 10px 0;
 }
 
 header {
@@ -360,7 +359,7 @@ header {
 
 .button {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 
 .button:hover, .button:focus-within {

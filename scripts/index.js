@@ -175,7 +175,7 @@ content.init = () => {
     //for each item in the array after adjusting for length, append new li with content from our 'content' array
     content.forEach(block => {
         $('.container').append(`
-        <li class="gridItem ${block.name}" id="${block.name}">
+        <li class="gridItem ${block.name}" id="${block.name}" tabindex="0">
         <h2>${block.producer}</h2>  
         </li>
         <audio src="${block.audio}" class="${block.audioClass}" preload="auto" type="audio/mpeg"></audio>
@@ -183,17 +183,31 @@ content.init = () => {
     });
 
 
-    //on click of li, play correspodning audio track listed in 'content' array
+    //on click of li, play corresponding audio track listed in 'content' array
     $('li').on('click', function() {
         const audio =  $(this).next()[0];
         audio.play();
         //shoutout Sherry for helping me with this
-    })
+    });
+
+    //on keypress of 'space', play corresponding audio track
+    $('li').keypress(function(e){
+        if (e.which === 32) {
+        const audio =  $(this).next()[0];
+        audio.play();
+        }
+    });
 
     //on click of button, refresh the selection
     $('.button').click(function() {
         location.reload();
-    })
+    });
+
+    $('.button').keypress(function(e) {
+        if (e.which === 32) {
+        location.reload();
+        }
+    });
 }
 
 $(function() {
