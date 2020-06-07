@@ -455,18 +455,3 @@ p {
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
-  .container {
-    -ms-grid-rows: (200px)[2];
-    -ms-grid-columns: (200px)[2];
-        grid-template: repeat(2, 200px)/repeat(2, 200px);
-  }
-  .gridItem {
-    display: none;
-  }
-  .gridItem:nth-child(-n+8) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}

@@ -164,7 +164,7 @@ content.init = () => {
         block.position = getRandomInt(25);
     });
 
-    //sort our array based on "position" value
+    //sort our array based on random "position" value
     content.sort(function(a, b) {
         return a.position - b.position
     });
