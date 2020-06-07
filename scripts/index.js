@@ -75,7 +75,7 @@ const content = [
     {
         name: "tayKeith",
         producer: `Tay Keith`,
-        audio: './audio/tayKeith.mp3',
+        audio: './audio/tayKeith.ogg',
         audioClass: 'p13',
     },
     {
@@ -179,6 +179,7 @@ content.init = () => {
         <h2>${block.producer}</h2>  
         </li>
         <audio src="${block.audio}" class="${block.audioClass}" preload="auto" type="audio/mpeg"></audio>
+
         `);
     });
 
@@ -203,6 +204,7 @@ content.init = () => {
         location.reload();
     });
 
+    //on keypress of button, refresh selection
     $('.button').keypress(function(e) {
         if (e.which === 32) {
         location.reload();
