@@ -75,7 +75,7 @@ const content = [
     {
         name: "tayKeith",
         producer: `Tay Keith`,
-        audio: './audio/tayKeith.ogg',
+        audio: './audio/tayKeith.mp3',
         audioClass: 'p13',
     },
     {
