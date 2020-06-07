@@ -20,7 +20,7 @@ const content = [
     {
         name: "metroBoomin",
         producer: `Metro Boomin`,
-        audio: './audio/metro-2.mp3',
+        audio: './audio/metro.mp3',
         audioClass: "p9"
     },
     {
@@ -99,14 +99,12 @@ const content = [
         name: "bobbyJohnson",
         producer: `Bobby Johnson`,
         audio: './audio/bobbyJohnson.mp3',
-        image: './images/bobbyJohnson.jpeg',
         audioClass: 'p17',
     },
     {
         name: "darkChild",
         producer: `Dark Child`,
         audio: './audio/darkChild.mp3',
-        image: './images/darkChild.jpeg',
         audioClass: 'p18',
     },
     {
