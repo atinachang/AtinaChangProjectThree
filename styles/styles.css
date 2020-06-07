@@ -256,6 +256,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #000;
+  margin: 10px 0;
 }
 
 h2 {
@@ -270,6 +271,24 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 10px 0;
+}
+
+header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -292,10 +311,8 @@ p {
       grid-template: repeat(3, 200px)/repeat(3, 200px);
 }
 
-.gridItem {
+.gridItem, .button {
   border: 2px solid #000;
-  margin: 20px;
-  border-radius: 50%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,6 +323,15 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.gridItem:hover, .gridItem:focus-within, .button:hover, .button:focus-within {
+  cursor: pointer;
+}
+
+.gridItem {
+  margin: 20px;
+  border-radius: 50%;
   background-size: contain;
   -webkit-filter: grayscale(70%);
           filter: grayscale(70%);
@@ -316,7 +342,6 @@ p {
           filter: grayscale(0) contrast(125%);
   -webkit-box-shadow: 0px 0px 50px 25px #2c2c2c;
           box-shadow: 0px 0px 50px 25px #2c2c2c;
-  cursor: pointer;
   margin: 10px;
 }
 
@@ -331,6 +356,16 @@ p {
 .gridItem h2 {
   color: white;
   text-shadow: 5px 5px 5px #2c2c2c;
+}
+
+.button {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.button:hover, .button:focus-within {
+  -webkit-box-shadow: 0px 0px 25px 10px #2c2c2c;
+          box-shadow: 0px 0px 25px 10px #2c2c2c;
 }
 
 .southside {

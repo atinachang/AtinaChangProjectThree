@@ -1,3 +1,4 @@
+//array of objects representing each producer, name and audio that will be displayed on the page
 const content = [
     {
         name: `southside`,
@@ -157,12 +158,13 @@ content.init = () => {
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max)) + 1;
     }
+
     //for each 'block' in the content array, give each block a random "position" between 1 and 9
     content.forEach(block => {
         block.position = getRandomInt(25);
     });
 
-    //sort our array based on random "position" value
+    //sort our array based on random "position" value, and makes sure that no li's are repeated on the page
     content.sort(function(a, b) {
         return a.position - b.position
     });
@@ -181,10 +183,16 @@ content.init = () => {
     });
 
 
+    //on click of li, play correspodning audio track listed in 'content' array
     $('li').on('click', function() {
         const audio =  $(this).next()[0];
         audio.play();
         //shoutout Sherry for helping me with this
+    })
+
+    //on click of button, refresh the selection
+    $('.button').click(function() {
+        location.reload();
     })
 }
 
