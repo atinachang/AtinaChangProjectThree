@@ -4,7 +4,7 @@ const content = [
         name: `southside`,
         producer: `Southside`,
         audio: './audio/southside.mp3',
-        image: './images/southside.jpeg',
+        image: './images/southSide.jpeg',
         audioClass: "p1"
     },
     {
