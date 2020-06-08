@@ -151,54 +151,63 @@ const content = [
         name: "nitti",
         producer: `Nitti`,
         audio: './audio/nitti.mp3',
+        image: './images/nitti.jpeg',
         audioClass: 'p22',
     },
     {
         name: "pierreBourne",
         producer: `Yo Pierre`,
         audio: './audio/pierreBourne.mp3',
+        image: './images/pierreBourne.jpeg',
         audioClass: 'p23',
     },
     {
         name: "quay",
         producer: `Quay Global`,
         audio: './audio/quay.mp3',
+        image: './images/quay.jpeg',
         audioClass: 'p24',
     },
     {
         name: "wheezy",
         producer: `Wheezy Outta Here`,
         audio: './audio/wheezy.mp3',
+        image: './images/wheezy.jpeg',
         audioClass: 'p25',
     },
     {
         name: "jetson",
         producer: `Jetson`,
         audio: './audio/jetson.mp3',
+        image: './images/jetson.jpeg',
         audioClass: 'p26',
     },
     {
         name: "thaBizness",
         producer: `Tha Bizness`,
         audio: './audio/thaBizness.mp3',
+        image: './images/thaBizness.jpeg',
         audioClass: 'p27',
     },
     {
         name: "dunDeal",
         producer: `Dun Deal`,
         audio: './audio/dunDeal.mp3',
+        image: './images/dunDeal.jpeg',
         audioClass: 'p28',
     },
     {
         name: "djSpinz",
         producer: `DJ Spinz`,
         audio: './audio/cutItUp.mp3',
+        image: './images/djSpinz.jpeg',
         audioClass: 'p29',
     },
     {
         name: "zaytoven",
         producer: `Zaytoven`,
         audio: './audio/zaytoven.mp3',
+        image: './images/zaytoven.jpeg',
         audioClass: 'p30',
     },
     
@@ -228,7 +237,7 @@ content.init = () => {
     content.forEach(block => {
         $('.container').append(`
         <li class="gridItem ${block.name}" id="${block.name}" tabindex="0">
-            <img src="${block.image}" alt="${block.producer}" class="sr-only"/>
+            <img src="${block.image}" alt="${block.producer}"/>
             <h2>${block.producer}</h2>  
         </li>
         <audio src="${block.audio}" class="${block.audioClass}" preload="auto" type="audio/mpeg"></audio>
