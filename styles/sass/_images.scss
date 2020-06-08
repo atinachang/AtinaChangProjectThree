@@ -97,3 +97,23 @@
 .wheezy {
     @include bg('../images/wheezy.jpeg')
 }
+
+.jetson {
+    @include bg ('../images/jetson.jpeg')
+}
+
+.thaBizness {
+    @include bg ('../images/thaBizness.jpeg')
+}
+
+.dunDeal {
+    @include bg ('../images/dunDeal.jpeg')
+}
+
+.djSpinz {
+    @include bg ('../images/djSpinz.jpeg')
+}
+
+.zaytoven {
+    @include bg ('../images/zaytoven.jpeg')
+}

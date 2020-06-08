@@ -475,6 +475,26 @@ header {
   background-image: url("../images/wheezy.jpeg");
 }
 
+.jetson {
+  background-image: url("../images/jetson.jpeg");
+}
+
+.thaBizness {
+  background-image: url("../images/thaBizness.jpeg");
+}
+
+.dunDeal {
+  background-image: url("../images/dunDeal.jpeg");
+}
+
+.djSpinz {
+  background-image: url("../images/djSpinz.jpeg");
+}
+
+.zaytoven {
+  background-image: url("../images/zaytoven.jpeg");
+}
+
 @media (max-width: 600px) {
   .wrapper {
     width: 80%;
