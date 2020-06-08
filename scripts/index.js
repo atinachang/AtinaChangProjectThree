@@ -4,6 +4,7 @@ const content = [
         name: `southside`,
         producer: `Southside`,
         audio: './audio/southside.mp3',
+        image: './images/southside.jpeg',
         audioClass: "p1"
     },
     {
@@ -207,6 +208,7 @@ content.init = () => {
     content.forEach(block => {
         $('.container').append(`
         <li class="gridItem ${block.name}" id="${block.name}" tabindex="0">
+        <img src="${block.image}" alt="${block.producer}" class="sr-only">
         <h2>${block.producer}</h2>  
         </li>
         <audio src="${block.audio}" class="${block.audioClass}" preload="auto" type="audio/mpeg"></audio>
@@ -214,33 +216,22 @@ content.init = () => {
         `);
     });
 
-
-    //on click of li, play corresponding audio track listed in 'content' array
-    $('li').on('click', function() {
-        const audio =  $(this).next()[0];
-        audio.play();
-        //shoutout Sherry for helping me with this
-    });
-
-    //on keypress of 'space', play corresponding audio track
-    $('li').keypress(function(e){
-        if (e.which === 32) {
+    //on click or spacebar keypress, play audio
+    $('li').on('click keypress', function(e) {
+        if (e.which === 32 || e.which === 1) {
         const audio =  $(this).next()[0];
         audio.play();
         }
+        //shoutout sherry and asaf for help with this
     });
 
-    //on click of button, refresh the selection
-    $('.button').click(function() {
-        location.reload();
-    });
-
-    //on keypress of button, refresh selection
-    $('.button').keypress(function(e) {
-        if (e.which === 32) {
-        location.reload();
+    //on click of button or spacebar keypress, refresh the selection
+    $('.button').on('click keypress', function(e) {
+        if (e.which === 32 || e.which === 1) {
+            location.reload();
         }
     });
+
 }
 
 $(function() {
