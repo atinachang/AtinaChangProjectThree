@@ -415,7 +415,7 @@ header {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .container {
     -ms-grid-columns: (180px)[2];
         grid-template-columns: repeat(2, 180px);
